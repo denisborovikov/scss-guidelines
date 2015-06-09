@@ -58,7 +58,7 @@
 
 Существует несколько вариаций использования именований. Мы используем следующую:
 
-```
+```scss
 .block {}
 .block__element {}
 .block--modifier {}
@@ -150,7 +150,7 @@ HTML теги без классов, очень базовые стили для
 
 Для описанных выше слоев, основной файл подпроекта `website` может иметь следующую структуру:
 
-```
+```scss
 @import "website/settings/*";
 @import "_tools/*";
 @import "website/generic/*";
@@ -179,7 +179,7 @@ HTML теги без классов, очень базовые стили для
 
 Стили каждого блока должны храниться рядом друг с другом, каждый блок должен быть выделен в отдельный файл:
 
-```
+```scss
 .module { }
 .module__list { }
 .module-list--modificator { }
@@ -187,7 +187,7 @@ HTML теги без классов, очень базовые стили для
 
 Селекторы, модифицируемые каскадом, должны так же храниться рядом с родительским классом:
 
-```
+```scss
 .module { }
 .module__list { }
 .module__list .other-module { }
@@ -195,7 +195,7 @@ HTML теги без классов, очень базовые стили для
 
 Исключением могут быть только классы из слоя контекста:
 
-```
+```scss
 .module { }
 .module__list { }
 .touch .module__list { }
@@ -204,14 +204,14 @@ HTML теги без классов, очень базовые стили для
 
 Модификаторы стоит прописывать после основной группы модифицируемых элементов, чтобы не создавать путаницу, которая обязательно возникнет при появлении нескольких модификаций.
 
-```
+```scss
 .block {}
 .block__element {}
 .block__sub-element {}
 
 .block--modifier {
-	.block_element {}
-    .block__sub-element {}
+.block_element {}
+.block__sub-element {}
 }
 ```
 
@@ -344,10 +344,10 @@ def svg_icon( id ):
 
 
 
-### Использованные источники
+### Спасибо
 
-[MCSS](http://operatino.github.io/MCSS/) by [Robert Haritonov](https://twitter.com/operatino)
+[MCSS](http://operatino.github.io/MCSS/) от [Robert Haritonov](https://twitter.com/operatino)
 
-[ITCSS](http://itcss.io/) by [Harry Roberts](https://twitter.com/csswizardry)
+[ITCSS](http://itcss.io/) от [Harry Roberts](https://twitter.com/csswizardry)
 
-http://codeguide.co/#css https://twitter.com/mdo
+[CSS Codeguide](http://codeguide.co/#css) от [Mark Otto](https://twitter.com/mdo)
